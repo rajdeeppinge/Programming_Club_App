@@ -7,4 +7,8 @@
     <string name="close_drawer">Close Drawer</string>
     <string name="title_activity_blog_list_view">Blogs</string>
     <string name="title_activity_event_list_view">EventListView</string>
+
+
+    <string name="text_message_above_news_list">Trending news for you :)</string>
+    <string name="main_activity_title_text"> Algorithm Of The Day !</string>
 </resources>

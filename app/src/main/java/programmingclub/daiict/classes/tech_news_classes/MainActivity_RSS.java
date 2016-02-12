@@ -35,7 +35,7 @@ public class MainActivity_RSS extends MainActivity implements AdapterView.OnItem
 
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.various_rss_list);
+        setContentView(R.layout.news_type_list_layout);
 
         //trying to get the drawer here as well
         frameLayout = (FrameLayout)findViewById(R.id.content_frame);
@@ -96,7 +96,7 @@ public class MainActivity_RSS extends MainActivity implements AdapterView.OnItem
                     }
 
                     int heroTopY = stickyViewSpacer.getTop();
-                    stickyView.setY(Math.max(0,heroTopY+topY));
+                    stickyView.setY(Math.max(0, heroTopY + topY));
 
                     /* Set the image to scroll half of the amount that of ListView */
                     heroImageView.setY(topY * 0.5f);
@@ -108,18 +108,18 @@ public class MainActivity_RSS extends MainActivity implements AdapterView.OnItem
 
         listView.setOnItemClickListener(this); //this is the use of the inbult listener
 
-        List<String> l =new ArrayList<String>();
+        List<String> newsTypes =new ArrayList<String>();
 
-        l.add("PCWorld News");
-        l.add("Technology News");
-        l.add("Android News");
-        l.add("StartUp News");
-        l.add("Gaming News");
-        l.add("Open Source News");
-        l.add("Internet News");
-        l.add("Software News");
+        newsTypes.add("PCWorld News");
+        newsTypes.add("Technology News");
+        newsTypes.add("Android News");
+        newsTypes.add("StartUp News");
+        newsTypes.add("Gaming News");
+        newsTypes.add("Open Source News");
+        newsTypes.add("Internet News");
+        newsTypes.add("Software News");
 
-        RssListAdapter a=new RssListAdapter(this,l); //the list adapter has a method which gives you a view containing an embedded text view or a tag
+        RssNewsTypeListAdapter a=new RssNewsTypeListAdapter(this,newsTypes); //the list adapter has a method which gives you a view containing an embedded text view or a tag
         listView.setAdapter(a); // set adapter to populate the listView
     }
 

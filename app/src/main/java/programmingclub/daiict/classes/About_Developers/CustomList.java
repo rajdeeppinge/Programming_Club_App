@@ -21,7 +21,7 @@ private final String[] name , email;
 private final Integer[] imageId;
 public CustomList(Activity context,
         String[] name, Integer[] imageId, String[] email) {
-        super(context, R.layout.list_single, name);
+        super(context, R.layout.about_developers_list_row, name);
         this.context = context;
         this.name = name;
         this.imageId = imageId;
@@ -30,7 +30,7 @@ public CustomList(Activity context,
 @Override
 public View getView(int position, View view, ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
-        View rowView= inflater.inflate(R.layout.list_single, null, true);
+        View rowView= inflater.inflate(R.layout.about_developers_list_row, null, true);
         TextView nameView = (TextView) rowView.findViewById(R.id.name);
 
         TextView emailView = (TextView) rowView.findViewById(R.id.name);

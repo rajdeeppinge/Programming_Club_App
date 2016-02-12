@@ -45,7 +45,7 @@ public class PCWorldRssFragment extends Fragment implements AdapterView.OnItemCl
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {//method used by fragment to set up its ui
         if (view == null) {
-            view = inflater.inflate(R.layout.fragment_layout, container, false); //contains the fragment layout and os renders it.
+            view = inflater.inflate(R.layout.rss_news_list_layout, container, false); //contains the fragment layout and os renders it.
             progressBar = (ProgressBar) view.findViewById(R.id.progressBar);
             listView = (ListView) view.findViewById(R.id.listView);
             listView.setOnItemClickListener(this); //inbuilt listener for listview

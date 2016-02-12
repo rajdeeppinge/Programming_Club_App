@@ -1,60 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/container_layout"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <FrameLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@android:color/holo_blue_dark">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_marginBottom="10dp"
-            android:text="Hello World!"
-            android:textSize="25dp" />
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:textSize="20dp"
-        android:text="PCWorld"/>
-
-    <TextView
-        android:id="@+id/tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:textSize="20dp"
-        android:text="TechNews"/>
-
-    <TextView
-        android:id="@+id/tv3"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:textSize="20dp"
-        android:text="AndroidNews"/>
-
-    <ListView
-        android:id="@+id/rssListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </ListView>
-
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:id="@+id/fragment_container"
-            android:layout_height="match_parent">
-        </FrameLayout>
-
-</LinearLayout>
--->
+<!-- this layout is used in displaying the various types of news feeds which the app can display. If the user clicks
+on one type then the news feed from that item is displayed. -->
 
 <android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -95,7 +41,7 @@
             android:background="#222"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-            android:text="Trending news for you :)"
+            android:text="@string/text_message_above_news_list"
             android:textColor="#fff"
             android:textSize="20sp"
             android:textStyle="bold" />

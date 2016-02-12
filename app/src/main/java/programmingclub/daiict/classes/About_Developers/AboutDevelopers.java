@@ -41,7 +41,7 @@ public class AboutDevelopers extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.developers);
+        setContentView(R.layout.about_developers);
 
         CustomList adapter = new
                 CustomList(AboutDevelopers.this, developers, imageId,email);

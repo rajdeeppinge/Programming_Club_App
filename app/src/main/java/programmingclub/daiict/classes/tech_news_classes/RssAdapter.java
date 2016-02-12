@@ -9,7 +9,6 @@ import android.widget.TextView;
 import java.util.List;
 
 import programmingclub.daiict.R;
-import programmingclub.daiict.classes.tech_news_classes.RssItem;
 
 /**
  * Created by omkar13 on 9/26/2015.
@@ -44,7 +43,7 @@ public class RssAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = View.inflate(context, R.layout.rss_item, null);
+            convertView = View.inflate(context, R.layout.rss_news_row_item, null);
             holder = new ViewHolder();
             holder.itemTitle = (TextView) convertView.findViewById(R.id.itemTitle);
             convertView.setTag(holder);

@@ -14,6 +14,8 @@ import java.io.Serializable;
 import java.net.URL;
 import java.util.List;
 
+import programmingclub.daiict.R;
+
 /**
  * Created by omkar13 on 12/24/2015.
  */

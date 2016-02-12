@@ -13,13 +13,13 @@ import programmingclub.daiict.R;
 /**
  * Created by omkar13 on 12/24/2015.
  */
-public class RssListAdapter extends BaseAdapter { //baseAdapter is abstract, we extend it to define how we want to handle our list
+public class RssNewsTypeListAdapter extends BaseAdapter { //baseAdapter is abstract, we extend it to define how we want to handle our list
 
 
     private final List<String> items;
     private final Context context;
 
-    public RssListAdapter(Context context, List<String> items) {
+    public RssNewsTypeListAdapter(Context context, List<String> items) {
         this.items = items;
         this.context = context;
     }
@@ -44,7 +44,7 @@ public class RssListAdapter extends BaseAdapter { //baseAdapter is abstract, we 
         //method in such a way that the method returns a textview with the approppriate text
         ViewHolder holder;
         if (convertView == null) {
-            convertView = View.inflate(context, R.layout.list_item, null); //we inflate a layout in convertview
+            convertView = View.inflate(context, R.layout.news_type_list_row_item, null); //we inflate a layout in convertview
             holder = new ViewHolder();
             holder.itemTitle = (TextView) convertView.findViewById(R.id.rssItemTitle); //points to textview in layout held in convertView
             convertView.setTag(holder); //that text view is then encapsulated within covnertView and we have tied it to a concrete layout
