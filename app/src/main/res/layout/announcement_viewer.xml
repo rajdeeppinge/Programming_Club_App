@@ -12,8 +12,8 @@
         android:textAllCaps="true"
         android:textStyle="bold"
         android:background="@color/background"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
         />
 
     <TextView
@@ -25,8 +25,8 @@
         android:autoLink="web"
         android:textColorLink="@color/redColorForUrlLink"
         android:background="#ffffff"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
     />
 
 

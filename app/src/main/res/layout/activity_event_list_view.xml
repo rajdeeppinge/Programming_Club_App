@@ -24,18 +24,18 @@
 
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="@dimen/default_value"
                     android:layout_weight="1.4"
                     android:weightSum="10">
                     <Button
                         android:id="@+id/left"
-                        android:layout_width="0dp"
+                        android:layout_width="@dimen/default_value"
                         android:layout_weight="1.5"
                         android:layout_height="fill_parent"
                         android:background="@mipmap/left"
                         android:clickable="true"/>
                     <Button
-                        android:layout_width="0dp"
+                        android:layout_width="@dimen/default_value"
                         android:layout_weight="7"
                         android:layout_height="fill_parent"
                         android:id="@+id/currWeek"
@@ -44,7 +44,7 @@
                         android:background="@android:color/transparent"/>
                     <Button
                         android:id="@+id/right"
-                        android:layout_width="0dp"
+                        android:layout_width="@dimen/default_value"
                         android:layout_weight="1.5"
                         android:layout_height="fill_parent"
                         android:clickable="true"
@@ -52,7 +52,7 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="@dimen/default_value"
                     android:layout_weight="0.8">
                     <TextView
                         android:layout_width="fill_parent"
@@ -63,7 +63,7 @@
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="@dimen/default_value"
                     android:layout_weight="0.8">
                     <TextView
                         android:layout_width="fill_parent"
@@ -78,8 +78,8 @@
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
+                android:paddingTop="@dimen/default_padding"
+                android:paddingBottom="@dimen/default_padding"
                 >
 
                 <ListView
@@ -89,7 +89,7 @@
                     android:listSelector="@android:color/transparent"
                     android:cacheColorHint="@android:color/transparent"
                     android:divider="@null"
-                    android:dividerHeight="10dp"
+                    android:dividerHeight="@dimen/default_divider_height"
                     />
             </RelativeLayout>
         </LinearLayout>
@@ -104,6 +104,6 @@
         android:background="@android:color/black"
         android:choiceMode="singleChoice"
         android:divider="@android:color/transparent"
-        android:dividerHeight="0dp" />
+        android:dividerHeight="@dimen/default_value" />
 </android.support.v4.widget.DrawerLayout>
 
