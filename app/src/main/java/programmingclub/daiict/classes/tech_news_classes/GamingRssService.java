@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class GamingRssService extends IntentService {
 
-    private static final String RSS_LINK = "http://feeds.feedburner.com/techcrunch/Gaming.rss";
+    private static final String RSS_LINK = "http://feeds.arstechnica.com/arstechnica/gaming.rss";
     public static final String ITEMS = "items";
     public static final String RECEIVER = "receiver";
 

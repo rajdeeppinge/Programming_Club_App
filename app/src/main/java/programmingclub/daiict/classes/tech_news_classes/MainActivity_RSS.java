@@ -112,8 +112,8 @@ public class MainActivity_RSS extends MainActivity implements AdapterView.OnItem
 
         newsTypes.add("PCWorld News");
         newsTypes.add("Technology News");
-        newsTypes.add("Android News");
-        newsTypes.add("StartUp News");
+        newsTypes.add("Science News");
+        newsTypes.add("Gear and Gadgets News");
         newsTypes.add("Gaming News");
         newsTypes.add("Open Source News");
         newsTypes.add("Internet News");
