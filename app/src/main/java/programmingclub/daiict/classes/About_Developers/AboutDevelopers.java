@@ -23,9 +23,9 @@ public class AboutDevelopers extends Activity {
     Integer[] imageId = {
             R.drawable.utsav,
             R.drawable.parth,
-            R.drawable.omkardp,
-            R.drawable.omkardp,
-            R.drawable.omkardp,
+            R.drawable.omkardp1,
+            R.drawable.omkardp1,
+            R.drawable.omkardp1,
 
     };
 
