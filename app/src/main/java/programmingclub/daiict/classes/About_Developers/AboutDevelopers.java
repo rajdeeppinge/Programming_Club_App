@@ -14,11 +14,11 @@ public class AboutDevelopers extends Activity {
 
     ListView list;
     String[] developers = {
-            "utsav",
-            "parth",
-            "omkar",
-            "aditya",
-            "rajdeep"
+            "Utsav Vyas",
+            "Parth Panchal",
+            "Omkar Damle",
+            "Aditya Joglekar",
+            "Rajdeep Pinge"
     } ;
     Integer[] imageId = {
             R.drawable.utsav,

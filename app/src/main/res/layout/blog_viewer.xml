@@ -51,7 +51,7 @@
             android:paddingLeft="@dimen/default_padding"
             android:paddingRight="@dimen/default_padding"
 
-            android:textColorLink="#ffff3e55" />
+            android:textColorLink="@color/redColorForUrlLink" />
     </LinearLayout>
     </ScrollView>
     <LinearLayout

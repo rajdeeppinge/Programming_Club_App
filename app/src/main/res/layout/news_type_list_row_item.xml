@@ -3,10 +3,10 @@
     android:id="@+id/rssItemTitle"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:background="#9E9E9E"
+    android:background="@color/newsTypeListBackgroundColor"
     android:gravity="center_vertical"
     android:text="List Item"
     android:padding="8dp"
     android:minHeight="60dp"
-    android:textColor="#222"
-    android:textSize="20dp"/>
+    android:textColor="@color/blackText"
+    android:textSize="@dimen/news_type_list_text_size"/>

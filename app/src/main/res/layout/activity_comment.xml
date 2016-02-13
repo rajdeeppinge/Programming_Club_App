@@ -11,9 +11,10 @@
         android:id="@+id/listOfComment"
         android:scrollbars="vertical"
         android:autoLink="web"
-        android:textSize="19dp"
+        android:textSize="@dimen/default_text_size"
         android:textColor="@android:color/black"
-        android:textColorLink="#ffff3e55"
+
+        android:textColorLink="@color/redColorForUrlLink"
         android:paddingTop="@dimen/default_padding"
         android:paddingLeft="@dimen/default_padding"
         android:paddingBottom="@dimen/default_padding"
