@@ -131,11 +131,11 @@
         <activity
             android:name=".classes.logo_screen_at_start_class.Splash"
             android:label="@string/app_name">
-            <intent-filter>
+            <!--intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter-->
         </activity>
 
         <activity android:name=".classes.tech_news_classes.FragmentActivity"
