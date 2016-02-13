@@ -19,15 +19,15 @@
         android:background="@color/background">
 
         <ListView
-            android:paddingTop="15dp"
+            android:paddingTop="@dimen/default_padding"
             android:id="@+id/card_listView"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:listSelector="@android:color/transparent"
             android:cacheColorHint="@android:color/transparent"
             android:divider="@null"
-            android:dividerHeight="10dp"
-            android:paddingBottom="15dp"
+            android:dividerHeight="@dimen/default_divider_height"
+            android:paddingBottom="@dimen/default_padding"
             />
     </RelativeLayout>
 
@@ -41,6 +41,6 @@
         android:background="#111"
         android:choiceMode="singleChoice"
         android:divider="@android:color/transparent"
-        android:dividerHeight="0dp" />
+        android:dividerHeight="@dimen/default_value" />
 </android.support.v4.widget.DrawerLayout>
 

@@ -25,7 +25,7 @@ public class AboutDevelopers extends Activity {
             R.drawable.parth,
             R.drawable.omkardp,
             R.drawable.omkardp,
-            R.drawable.omkardp,
+            R.drawable.rajdeep,
 
     };
 

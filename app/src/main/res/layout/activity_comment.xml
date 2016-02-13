@@ -14,10 +14,10 @@
         android:textSize="19dp"
         android:textColor="@android:color/black"
         android:textColorLink="#ffff3e55"
-        android:paddingTop="15dp"
-        android:paddingLeft="15dp"
-        android:paddingBottom="15dp"
-        android:paddingRight="15dp"
+        android:paddingTop="@dimen/default_padding"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingBottom="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
 
         android:text="No Comments">
     </TextView>
