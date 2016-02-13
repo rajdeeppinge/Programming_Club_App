@@ -11,15 +11,9 @@
 
     <Button
         android:layout_width="fill_parent"
-<<<<<<< HEAD
         android:layout_height="@dimen/default_value"
-        android:textSize="35dp"
-        android:text="Programming Club\nDA-IICT"
-=======
-        android:layout_height="0dp"
         android:textSize="@dimen/text_on_start_splash_activity_size"
         android:text="@string/text_on_start_splash_activity"
->>>>>>> 647470b317eb439447955de84d13cd8b79bd80e8
         android:background="#ffffff"
         android:textStyle="bold"
         android:textColor="@color/blackText"
