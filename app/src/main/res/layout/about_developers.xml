@@ -3,10 +3,22 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/list"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0px"
+        android:text="@string/github_url"
+        android:textStyle="bold"
+        android:textSize="@dimen/default_text_size"
+        android:layout_weight="1"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="4"
+        android:id="@+id/list"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        >
     </ListView>
 
 </LinearLayout>

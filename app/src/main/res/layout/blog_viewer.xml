@@ -51,7 +51,7 @@
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
 
-            android:textColorLink="#ffff3e55" />
+            android:textColorLink="@color/redColorForUrlLink" />
     </LinearLayout>
     </ScrollView>
     <LinearLayout

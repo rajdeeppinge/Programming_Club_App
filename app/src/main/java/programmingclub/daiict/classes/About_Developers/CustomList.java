@@ -33,7 +33,7 @@ public View getView(int position, View view, ViewGroup parent) {
         View rowView= inflater.inflate(R.layout.about_developers_list_row, null, true);
         TextView nameView = (TextView) rowView.findViewById(R.id.name);
 
-        TextView emailView = (TextView) rowView.findViewById(R.id.name);
+        TextView emailView = (TextView) rowView.findViewById(R.id.email);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.img);
 
         nameView.setText(name[position]);
