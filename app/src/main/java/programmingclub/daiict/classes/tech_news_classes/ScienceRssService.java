@@ -21,19 +21,19 @@ import programmingclub.daiict.R;
  */
 
 
-public class AndroidRssService extends IntentService {
+public class ScienceRssService extends IntentService {
 
-    private static final String RSS_LINK = "http://feeds.feedburner.com/techcrunch/android.rss";
+    private static final String RSS_LINK = "http://feeds.arstechnica.com/arstechnica/science.rss";
     public static final String ITEMS = "items";
     public static final String RECEIVER = "receiver";
 
-    public AndroidRssService() {
-      super("AndroidRssService");
+    public ScienceRssService() {
+      super("ScienceRssService");
   }
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        Log.d("AndroidRssService", ":onHandleIntent method: Service started");
+        Log.d("ScienceRssService", ":onHandleIntent method: Service started");
         List<RssItem> rssItems = null;
         try {
             RssParser parser = new RssParser();
@@ -58,7 +58,7 @@ public class AndroidRssService extends IntentService {
             URL url = new URL(link);
             return url.openConnection().getInputStream();
         } catch (IOException e) {
-            Log.w("AndroidRssService", "getInputStream Exception while retrieving the input stream", e);
+            Log.w("ScienceRssService", "getInputStream Exception while retrieving the input stream", e);
             return null;
         }
     }

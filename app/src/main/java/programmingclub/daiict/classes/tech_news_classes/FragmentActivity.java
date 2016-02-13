@@ -27,9 +27,9 @@ public class FragmentActivity extends android.support.v4.app.FragmentActivity {
                 break;
             case 2: addTechFragment();
                 break;
-            case 3: addAndroidFragment();
+            case 3: addScienceFragment();
                 break;
-            case 4: addStartUpFragment();
+            case 4: addGearAndGadgestFragment();
                 break;
             case 5: addGamingFragment();
                 break;
@@ -63,20 +63,20 @@ public class FragmentActivity extends android.support.v4.app.FragmentActivity {
         transaction.commit();
     }
 
-    public void addAndroidFragment() {
+    public void addScienceFragment() {
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        AndroidRssFragment fragment = new AndroidRssFragment();
+        ScienceRssFragment fragment = new ScienceRssFragment();
         transaction.add(R.id.fragment_container, fragment);
 
         transaction.commit();
     }
 
 
-    public void addStartUpFragment(){
+    public void addGearAndGadgestFragment(){
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        StartUpRssFragment fragment=new StartUpRssFragment();
+        GearAndGadgetsRssFragment fragment=new GearAndGadgetsRssFragment();
         transaction.add(R.id.fragment_container, fragment);
 
         transaction.commit();

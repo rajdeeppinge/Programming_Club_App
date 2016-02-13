@@ -25,7 +25,7 @@ import programmingclub.daiict.R;
 /**
  * Created by omkar13 on 12/24/2015.
  */
-public class AndroidRssFragment extends Fragment implements AdapterView.OnItemClickListener{
+public class ScienceRssFragment extends Fragment implements AdapterView.OnItemClickListener{
 
     private ProgressBar progressBar;
     private ListView listView;
@@ -59,19 +59,19 @@ public class AndroidRssFragment extends Fragment implements AdapterView.OnItemCl
     }
 
     private void startService() {
-        Intent intent = new Intent(getActivity(), AndroidRssService.class);
-        intent.putExtra(AndroidRssService.RECEIVER, resultReceiver);
+        Intent intent = new Intent(getActivity(), ScienceRssService.class);
+        intent.putExtra(ScienceRssService.RECEIVER, resultReceiver);
         getActivity().startService(intent);
     }
 
     /**
-     * Once the {@link AndroidRssService} finishes its task, the result is sent to this ResultReceiver.
+     * Once the {@link ScienceRssService} finishes its task, the result is sent to this ResultReceiver.
      */
     private final ResultReceiver resultReceiver = new ResultReceiver(new Handler()) {
         @SuppressWarnings("unchecked")
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData) {
-            List<RssItem> items = (List<RssItem>) resultData.getSerializable(AndroidRssService.ITEMS);
+            List<RssItem> items = (List<RssItem>) resultData.getSerializable(ScienceRssService.ITEMS);
 
             if (items != null)
             {

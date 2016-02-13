@@ -148,8 +148,8 @@
 
         <service android:name=".classes.tech_news_classes.PCWorldRssService" />
         <service android:name=".classes.tech_news_classes.TechnologyAppRssService"/>
-        <service android:name=".classes.tech_news_classes.AndroidRssService"/>
-        <service android:name=".classes.tech_news_classes.StartUpRssService"/>
+        <service android:name=".classes.tech_news_classes.ScienceRssService"/>
+        <service android:name=".classes.tech_news_classes.GearAndGadgetsRssService"/>
         <service android:name=".classes.tech_news_classes.GamingRssService"/>
         <service android:name=".classes.tech_news_classes.OpenSourceRssService"/>
         <service android:name=".classes.tech_news_classes.InternetRssService"/>

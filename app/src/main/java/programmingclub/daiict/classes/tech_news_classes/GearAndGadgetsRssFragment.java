@@ -25,7 +25,7 @@ import programmingclub.daiict.R;
 /**
  * Created by omkar13 on 12/24/2015.
  */
-public class StartUpRssFragment extends Fragment implements AdapterView.OnItemClickListener {
+public class GearAndGadgetsRssFragment extends Fragment implements AdapterView.OnItemClickListener {
 
 
     private ProgressBar progressBar;
@@ -60,20 +60,20 @@ public class StartUpRssFragment extends Fragment implements AdapterView.OnItemCl
     }
 
     private void startService() {
-        Intent intent = new Intent(getActivity(), StartUpRssService.class);
-        intent.putExtra(StartUpRssService.RECEIVER, resultReceiver);
+        Intent intent = new Intent(getActivity(), GearAndGadgetsRssService.class);
+        intent.putExtra(GearAndGadgetsRssService.RECEIVER, resultReceiver);
         getActivity().startService(intent);
     }
 
     /**
-     * Once the {@link StartUpRssService} finishes its task, the result is sent to this ResultReceiver.
+     * Once the {@link GearAndGadgetsRssService} finishes its task, the result is sent to this ResultReceiver.
      */
     private final ResultReceiver resultReceiver = new ResultReceiver(new Handler()) {
         @SuppressWarnings("unchecked")
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData)
         {
-            List<RssItem> items = (List<RssItem>) resultData.getSerializable(StartUpRssService.ITEMS);
+            List<RssItem> items = (List<RssItem>) resultData.getSerializable(GearAndGadgetsRssService.ITEMS);
 
             if (items != null)
             {
