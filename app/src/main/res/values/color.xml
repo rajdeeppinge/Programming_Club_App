@@ -2,5 +2,9 @@
 <resources>
     <color name="colors" >#f8adf1ff</color>
     <color name="background">#BED4DF</color>
+    <color name="newsTypeListBackgroundColor">#9E9E9E</color>
+    <color name="RssNewsListBackgroundColor">#5D8AA8</color>
     <color name="dark_background">#AAC1CA</color>
+    <color name="blackText">#222</color>
+    <color name="redColorForUrlLink">#ffff3e55</color>
 </resources>

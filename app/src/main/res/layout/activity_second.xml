@@ -13,6 +13,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         
-        android:text="Start Coding Buddy!!" />
+        android:text="@string/second_activity_message" />
 
 </LinearLayout>
