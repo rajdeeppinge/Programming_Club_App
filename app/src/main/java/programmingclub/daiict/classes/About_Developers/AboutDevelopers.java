@@ -23,18 +23,18 @@ public class AboutDevelopers extends Activity {
     Integer[] imageId = {
             R.drawable.utsav,
             R.drawable.parth,
-            R.drawable.omkardp,
-            R.drawable.omkardp,
+            R.drawable.omkardp1,
+            R.drawable.rajdeep,
             R.drawable.rajdeep,
 
     };
 
     String[] email = {
-            "utsavvyas16@gmail.com",
-            "parthpanchal12196@gmail.com",
-            "omkarvdamle13@gmail.com",
-            "joglekara1@gmail.com",
-            "rajpinge@gmail.com"
+            "utsavvyas16\n@gmail.com",
+            "parthpanchal12196\n@gmail.com",
+            "omkarvdamle13\n@gmail.com",
+            "joglekara1\n@gmail.com",
+            "rajpinge\n@gmail.com"
     }
             ;
 
