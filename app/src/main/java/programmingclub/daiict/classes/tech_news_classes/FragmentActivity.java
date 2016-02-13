@@ -1,18 +1,11 @@
 package programmingclub.daiict.classes.tech_news_classes;
 
+// this class is used as a holder for the various fragments of news meant to be displayed.
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
 import programmingclub.daiict.R;
-import programmingclub.daiict.classes.tech_news_classes.AndroidRssFragment;
-import programmingclub.daiict.classes.tech_news_classes.GamingRssFragment;
-import programmingclub.daiict.classes.tech_news_classes.InternetRssFragment;
-import programmingclub.daiict.classes.tech_news_classes.OpenSourceRssFragment;
-import programmingclub.daiict.classes.tech_news_classes.PCWorldRssFragment;
-import programmingclub.daiict.classes.tech_news_classes.SoftwareRssFragment;
-import programmingclub.daiict.classes.tech_news_classes.StartUpRssFragment;
-import programmingclub.daiict.classes.tech_news_classes.TechnologyAppRssFragment;
 
 /**
  * Created by omkar13 on 12/20/2015.
@@ -23,7 +16,7 @@ public class FragmentActivity extends android.support.v4.app.FragmentActivity {
     public void onCreate(Bundle savedInstanceState){
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main); //an empty frame layout
+        setContentView(R.layout.rss_news_fragment_container); //an empty frame layout
 
         Bundle b = getIntent().getExtras();
 
