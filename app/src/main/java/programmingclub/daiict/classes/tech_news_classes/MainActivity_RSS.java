@@ -115,9 +115,9 @@ public class MainActivity_RSS extends MainActivity implements AdapterView.OnItem
         newsTypes.add("Science News");
         newsTypes.add("Gear and Gadgets News");
         newsTypes.add("Gaming News");
-        newsTypes.add("Open Source News");
-        newsTypes.add("Internet News");
-        newsTypes.add("Software News");
+        newsTypes.add("Cyber Security News");
+        newsTypes.add("Science Fiction News");
+        newsTypes.add("All News");
 
         RssNewsTypeListAdapter a=new RssNewsTypeListAdapter(this,newsTypes); //the list adapter has a method which gives you a view containing an embedded text view or a tag
         listView.setAdapter(a); // set adapter to populate the listView

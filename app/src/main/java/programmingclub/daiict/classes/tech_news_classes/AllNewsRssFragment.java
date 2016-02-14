@@ -26,7 +26,7 @@ import programmingclub.daiict.R;
 /**
  * Created by omkar13 on 12/24/2015.
  */
-public class SoftwareRssFragment  extends Fragment implements AdapterView.OnItemClickListener{
+public class AllNewsRssFragment extends Fragment implements AdapterView.OnItemClickListener{
 
     private ProgressBar progressBar;
     private ListView listView;
@@ -60,19 +60,19 @@ public class SoftwareRssFragment  extends Fragment implements AdapterView.OnItem
     }
 
     private void startService() {
-        Intent intent = new Intent(getActivity(), SoftwareRssService.class);
-        intent.putExtra(SoftwareRssService.RECEIVER, resultReceiver);
+        Intent intent = new Intent(getActivity(), AllNewsRssService.class);
+        intent.putExtra(AllNewsRssService.RECEIVER, resultReceiver);
         getActivity().startService(intent);
     }
 
     /**
-     * Once the {@link SoftwareRssService} finishes its task, the result is sent to this ResultReceiver.
+     * Once the {@link AllNewsRssService} finishes its task, the result is sent to this ResultReceiver.
      */
     private final ResultReceiver resultReceiver = new ResultReceiver(new Handler()) {
         @SuppressWarnings("unchecked")
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData) {
-            List<RssItem> items = (List<RssItem>) resultData.getSerializable(SoftwareRssService.ITEMS);
+            List<RssItem> items = (List<RssItem>) resultData.getSerializable(AllNewsRssService.ITEMS);
             if (items != null)
             {
                 RssAdapter adapter = new RssAdapter(getActivity(), items);
@@ -147,7 +147,7 @@ public class SoftwareRssFragment  extends Fragment implements AdapterView.OnItem
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Log.d("SoftwareRssFragment" , "reached OnItemClick !!!!!!!!!!!!!!!!!!!! ");
+        Log.d("AllNewsRssFragment" , "reached OnItemClick !!!!!!!!!!!!!!!!!!!! ");
         RssAdapter adapter = (RssAdapter) parent.getAdapter();
         RssItem item = (RssItem) adapter.getItem(position);
         //Uri uri = Uri.parse(item.getLink());
