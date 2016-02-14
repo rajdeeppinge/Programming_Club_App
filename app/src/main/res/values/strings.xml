@@ -10,7 +10,7 @@
 
 
     <string name="text_message_above_news_list">Trending news for you :)</string>
-    <string name="main_activity_title_text"> Algorithm Of The Day !</string>
+    <string name="main_activity_title_text"> Algorithm Of The week !</string>
     <string name="second_activity_message">Start Coding Buddy!!</string>
     <string name="text_on_start_splash_activity">Programming Club\nDA-IICT</string>
     <string name="github_url">Code hosted on : https://github.com/rajpinge/Programming_Club_App.git\nContribute to make app better !</string>

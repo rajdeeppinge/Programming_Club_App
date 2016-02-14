@@ -151,9 +151,9 @@
         <service android:name=".classes.tech_news_classes.ScienceRssService"/>
         <service android:name=".classes.tech_news_classes.GearAndGadgetsRssService"/>
         <service android:name=".classes.tech_news_classes.GamingRssService"/>
-        <service android:name=".classes.tech_news_classes.OpenSourceRssService"/>
-        <service android:name=".classes.tech_news_classes.InternetRssService"/>
-        <service android:name=".classes.tech_news_classes.SoftwareRssService"/>
+        <service android:name=".classes.tech_news_classes.CyberSecurityRssService"/>
+        <service android:name=".classes.tech_news_classes.SciFiRssService"/>
+        <service android:name=".classes.tech_news_classes.AllNewsRssService"/>
 
         <service android:name=".classes.event_classes.MyAlarmService"
             android:enabled="true" />

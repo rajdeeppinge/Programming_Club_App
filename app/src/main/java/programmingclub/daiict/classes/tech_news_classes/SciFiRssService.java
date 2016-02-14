@@ -17,20 +17,20 @@ import java.util.List;
 /**
  * Created by omkar13 on 12/24/2015.
  */
-public class SoftwareRssService extends IntentService {
+public class SciFiRssService extends IntentService {
 
-    private static final String RSS_LINK = "http://feeds.arstechnica.com/arstechnica/software.rss";
+    private static final String RSS_LINK = "http://feeds.arstechnica.com/arstechnica/multiverse.rss";
     public static final String ITEMS = "items";
     public static final String RECEIVER = "receiver";
 
-    public SoftwareRssService() {
-        super("SoftwareRssService");
+    public SciFiRssService() {
+        super("SciFiRssService");
     }
 
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        Log.d("SoftwareRssService", ":onHandleIntent method: Service started");
+        Log.d("SciFiRssService", ":onHandleIntent method: Service started");
         List<RssItem> rssItems = null;
         try {
             RssParser parser = new RssParser();
@@ -53,7 +53,7 @@ public class SoftwareRssService extends IntentService {
             URL url = new URL(link);
             return url.openConnection().getInputStream();
         } catch (IOException e) {
-            Log.w("SoftwareRssService", "getInputStream Exception while retrieving the input stream", e);
+            Log.w("SciFiRssService", "getInputStream Exception while retrieving the input stream", e);
             return null;
         }
     }

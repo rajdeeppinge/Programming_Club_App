@@ -33,11 +33,11 @@ public class FragmentActivity extends android.support.v4.app.FragmentActivity {
                 break;
             case 5: addGamingFragment();
                 break;
-            case 6: addOpenSourceFragment();
+            case 6: addCyberSecurityFragment();
                 break;
-            case 7: addInternetFragment();
+            case 7: addSciFiFragment();
                 break;
-            case 8: addSoftwareFragment();
+            case 8: addAllNewsFragment();
                 break;
         }
 }
@@ -96,30 +96,30 @@ public class FragmentActivity extends android.support.v4.app.FragmentActivity {
 
     }
 
-    public void addOpenSourceFragment(){
+    public void addCyberSecurityFragment(){
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        OpenSourceRssFragment fragment=new OpenSourceRssFragment();
+        CyberSecurityRssFragment fragment=new CyberSecurityRssFragment();
         transaction.add(R.id.fragment_container, fragment);
 
         transaction.commit();
 
 
     }
-    public void addInternetFragment(){
+    public void addSciFiFragment(){
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        InternetRssFragment fragment=new InternetRssFragment();
+        SciFiRssFragment fragment=new SciFiRssFragment();
         transaction.add(R.id.fragment_container, fragment);
 
         transaction.commit();
 
 
     }
-    public void addSoftwareFragment(){
+    public void addAllNewsFragment(){
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        SoftwareRssFragment fragment=new SoftwareRssFragment();
+        AllNewsRssFragment fragment=new AllNewsRssFragment();
         transaction.add(R.id.fragment_container, fragment);
 
         transaction.commit();

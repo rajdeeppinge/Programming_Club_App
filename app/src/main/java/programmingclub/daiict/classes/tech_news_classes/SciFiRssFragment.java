@@ -25,7 +25,7 @@ import programmingclub.daiict.R;
 /**
  * Created by omkar13 on 12/24/2015.
  */
-public class OpenSourceRssFragment  extends Fragment implements AdapterView.OnItemClickListener{
+public class SciFiRssFragment extends Fragment implements AdapterView.OnItemClickListener{
 
     private ProgressBar progressBar;
     private ListView listView;
@@ -59,20 +59,19 @@ public class OpenSourceRssFragment  extends Fragment implements AdapterView.OnIt
     }
 
     private void startService() {
-        Intent intent = new Intent(getActivity(), OpenSourceRssService.class);
-        intent.putExtra(OpenSourceRssService.RECEIVER, resultReceiver);
+        Intent intent = new Intent(getActivity(), SciFiRssService.class);
+        intent.putExtra(SciFiRssService.RECEIVER, resultReceiver);
         getActivity().startService(intent);
     }
 
     /**
-     * Once the {@link OpenSourceRssService} finishes its task, the result is sent to this ResultReceiver.
+     * Once the {@link SciFiRssService} finishes its task, the result is sent to this ResultReceiver.
      */
     private final ResultReceiver resultReceiver = new ResultReceiver(new Handler()) {
         @SuppressWarnings("unchecked")
         @Override
         protected void onReceiveResult(int resultCode, Bundle resultData) {
-            List<RssItem> items = (List<RssItem>) resultData.getSerializable(OpenSourceRssService.ITEMS);
-
+            List<RssItem> items = (List<RssItem>) resultData.getSerializable(SciFiRssService.ITEMS);
             if (items != null)
             {
                 RssAdapter adapter = new RssAdapter(getActivity(), items);
@@ -88,18 +87,19 @@ public class OpenSourceRssFragment  extends Fragment implements AdapterView.OnIt
 
                 //when info is available, then fill in the database
                 //before that delete previous data
-                db.delete(DatabaseContract.tableDefinition.TABLE_NAME5, null, null);
+                db.delete(DatabaseContract.tableDefinition.TABLE_NAME7, null, null);
 
                 while (li.hasNext())
                 {
                     RssItem temp=li.next();
-                    values.put(DatabaseContract.tableDefinition.COLUMN_NAME_TITLE6,temp.getTitle());
-                    values.put(DatabaseContract.tableDefinition.COLUMN_NAME_LINK6, temp.getLink());
+                    values.put(DatabaseContract.tableDefinition.COLUMN_NAME_TITLE7,temp.getTitle());
+                    values.put(DatabaseContract.tableDefinition.COLUMN_NAME_LINK7, temp.getLink());
 
-                    db.insert(DatabaseContract.tableDefinition.TABLE_NAME6, null, values); //row added
+                    db.insert(DatabaseContract.tableDefinition.TABLE_NAME7, null, values); //row added
                     values.clear();
                 }
             }
+
             else
             {
                 items=new ArrayList<RssItem>();
@@ -108,7 +108,7 @@ public class OpenSourceRssFragment  extends Fragment implements AdapterView.OnIt
                 //we will try to get cursor if cursor is empty then db is empty
 
                 db=mDbHelper.getWritableDatabase();
-                String query="SELECT * FROM "+DatabaseContract.tableDefinition.TABLE_NAME6+" WHERE 1;"; //query syntax to retrive the entire database.
+                String query="SELECT * FROM "+DatabaseContract.tableDefinition.TABLE_NAME7+" WHERE 1;"; //query syntax to retrive the entire database.
 
                 Cursor c =db.rawQuery(query,null);
 
@@ -122,14 +122,14 @@ public class OpenSourceRssFragment  extends Fragment implements AdapterView.OnIt
                     while(!c.isAfterLast())
                     {
 
-                        if (c.getString(c.getColumnIndex("title6"))!=null)
+                        if (c.getString(c.getColumnIndex("title7"))!=null)
                         {
-                            title=c.getString(c.getColumnIndex("title6"));
+                            title=c.getString(c.getColumnIndex("title7"));
                         }
 
-                        if (c.getString(c.getColumnIndex("link6"))!=null)
+                        if (c.getString(c.getColumnIndex("link7"))!=null)
                         {
-                            link=c.getString(c.getColumnIndex("link6"));
+                            link=c.getString(c.getColumnIndex("link7"));
                         }
 
                         items.add(new RssItem(title,link));
@@ -140,7 +140,6 @@ public class OpenSourceRssFragment  extends Fragment implements AdapterView.OnIt
                     listView.setAdapter(adapter);
                 }
             }
-
             progressBar.setVisibility(View.GONE);
             listView.setVisibility(View.VISIBLE);
         };
@@ -156,7 +155,5 @@ public class OpenSourceRssFragment  extends Fragment implements AdapterView.OnIt
         startActivity(intent);
 
     }
-
-
 
 }
