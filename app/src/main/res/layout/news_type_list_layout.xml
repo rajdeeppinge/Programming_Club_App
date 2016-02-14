@@ -55,7 +55,7 @@ on one type then the news feed from that item is displayed. -->
         android:layout_gravity="start"
         android:background="@color/blackText"
         android:choiceMode="singleChoice"
-        android:divider="@android:color/transparent"
+        android:divider="@android:color/black"
         android:dividerHeight="@dimen/default_value" />
 
 </android.support.v4.widget.DrawerLayout>
