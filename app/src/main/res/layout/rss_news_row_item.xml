@@ -9,4 +9,5 @@
     android:gravity="center_vertical"
     android:text="List Item"
     android:padding="10dp"
-    android:textColor="@color/blackText" />
+    android:textColor="@color/blackText"
+    android:textSize = "17sp" />

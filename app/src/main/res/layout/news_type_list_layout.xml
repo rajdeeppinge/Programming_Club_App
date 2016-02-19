@@ -23,7 +23,7 @@ on one type then the news feed from that item is displayed. -->
             android:id="@+id/heroImageView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:background="@drawable/sticky_view_image"
+            android:background="@drawable/technology_pic_teal"
             android:scaleType="fitCenter" /> <!--use the image as background in image view -->
 
         <ListView
