@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--color name="colors" >#f8adf1ff</color-->
-    <color name="background">#8bc34a</color><!--#BED4DF-->
+    <color name="background">#B2DFDB</color><!--#BED4DF-->
     <color name="newsTypeListBackgroundColor">#FFFFFF</color><!--#9E9E9E-->
     <color name="RssNewsListBackgroundColor">#FFFFFF</color><!--#5D8AA8-->
-    <color name="dark_background">#388e3c</color><!--#AAC1CA-->
+    <color name="dark_background">#00796B</color><!--#AAC1CA-->
     <color name="blackText">#222</color>
     <color name="redColorForUrlLink">#ffff3e55</color>
 </resources>

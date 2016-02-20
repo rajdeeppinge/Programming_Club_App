@@ -24,7 +24,7 @@
             android:textSize="@dimen/main_layout_title_text_size"
             android:paddingTop="7dp"
             android:paddingBottom="7dp"
-            android:paddingLeft="80dp"
+            android:gravity="center_horizontal"
             />
 
         <WebView
