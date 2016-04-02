@@ -14,4 +14,5 @@
     <string name="second_activity_message">Start Coding Buddy!!</string>
     <string name="text_on_start_splash_activity">Programming Club\nDA-IICT</string>
     <string name="github_url">Code hosted on : https://github.com/rajpinge/Programming_Club_App.git\nContribute to make app better !</string>
+    <string name="url_algo_of_week">https://public-api.wordpress.com/rest/v1.1/sites/proclubdaiict.wordpress.com/posts/508</string>
 </resources>
