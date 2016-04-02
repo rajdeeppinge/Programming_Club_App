@@ -85,18 +85,23 @@ public class MainActivity extends Activity {
      */
     private com.google.android.gms.common.api.GoogleApiClient client;
 
+    private String URL_ALGO_OF_WEEK;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
 
+        URL_ALGO_OF_WEEK = getApplicationContext().getString(R.string.url_algo_of_week);
+
+
         WebView w = (WebView) findViewById(R.id.webView);
 
         final asyncex as = new asyncex();
         // String param[] = new String[3];
         try {
-            String result = as.execute("https://public-api.wordpress.com/rest/v1.1/sites/omkarsiteblog.wordpress.com/posts/5").get();
+            String result = as.execute(URL_ALGO_OF_WEEK).get();
             JSONObject jobj = new JSONObject(result);
             //     jArray = jobj.getJSONArray("posts");
 
